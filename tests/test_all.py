@@ -42,7 +42,7 @@ def test_encode_decode_strings():
 def test_group_anagrams():
     input: List[str] = ["act", "pots", "tops", "cat", "stop", "hat"]
     expected_output: List[List[str]] = [
-        ["hat"], ["act", "cat"], ["stop", "pots", "tops"]
+        ["hat"], ["act", "cat"], ["pots", "tops", "stop"]
     ]
 
     output: List[List[str]] = group_anagrams(input)
