@@ -1,6 +1,6 @@
 """
 Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
- 
+
 
 Example 1:
 
@@ -40,12 +40,3 @@ def contains_duplicate(nums: List[int]):
             return True
         m.add(num)
     return False
-
-
-# Test
-input_true: List[int] = [1, 2, 3, 1]
-input_false: List[int] = [1, 2, 3, 4]
-result: bool = True
-assert (contains_duplicate(input_true))
-assert (contains_duplicate(input_false) == False)
-print("yaay")

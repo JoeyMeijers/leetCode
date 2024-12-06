@@ -44,18 +44,3 @@ def decode(string: str) -> List[str]:
         res.append(string[j+1: j + 1 + length])
         i = j + 1 + length
     return res
-
-
-input = ["we", "say", ":", "yes"]
-output = ["we", "say", ":", "yes"]
-
-result = encode(input)
-result = decode(result)
-assert input == result
-
-input = ["we", "say", ":", "yes", "!@#$%^&*()"]
-output = ["we", "say", ":", "yes", "!@#$%^&*()"]
-result = encode(input)
-result = decode(result)
-assert input == result
-print("yaay")

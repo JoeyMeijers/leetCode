@@ -40,13 +40,3 @@ def valid_anagram(s1: str, s2: str) -> bool:
             return False
 
     return True
-
-
-s: str = "racecar"
-t: str = "carrace"
-assert valid_anagram(s, t) is True
-
-s: str = "jar"
-t: str = "jam"
-assert valid_anagram(s, t) is False
-print("yaay")

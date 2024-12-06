@@ -41,11 +41,3 @@ def top_k_frequent_elements(nums: List[int], k: int) -> List[int]:
     result = [x[1] for x in res]
 
     return result[:k]
-
-
-nums = [1, 2, 2, 3, 3, 3]
-k = 2
-result = top_k_frequent_elements(nums, k)
-expected = [2, 3]
-assert sorted(result) == sorted(result)
-print("yaay")

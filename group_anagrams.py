@@ -51,14 +51,3 @@ def group_anagrams(strs: List[str]) -> List[List[str]]:
     for k, v in m.items():
         result.append(v)
     return result
-
-
-input: List[str] = ["act", "pots", "tops", "cat", "stop", "hat"]
-expected_output: List[List[str]] = [
-    ["hat"], ["act", "cat"], ["stop", "pots", "tops"]
-]
-
-output: List[List[str]] = group_anagrams(input)
-
-assert sorted(output) == sorted(expected_output)
-print("yaay")
