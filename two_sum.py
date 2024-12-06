@@ -7,7 +7,7 @@ Return the answer with the smaller index first.
 
 Example 1:
 
-Input: 
+Input:
 nums = [3,4,5,6], target = 7
 
 Output: [0,1]
@@ -46,14 +46,3 @@ def twoSum(nums: List[int], target: int):
     return []
 
 
-# Test code
-# Arrange
-nums: List[int] = [1, 3, 6, 8]
-target: int = 11
-expected_result: List[int] = [1, 3]
-# Act
-result: List[int] = twoSum(nums, target)
-# Assert
-assert expected_result == result
-# Good
-print(result, "Yaay")
